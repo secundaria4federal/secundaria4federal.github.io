@@ -19,7 +19,7 @@
     <div class="container">
       <a href="#inicio" class="brand">
         <span class="brand-text">
-          <strong>Escuela N°4</strong>
+          <strong>Esc. Sec. N°4</strong>
           <span>"Mariano Moreno"</span>
         </span>
       </a>
@@ -38,16 +38,16 @@
         <img data-bind-attr="hero.image:src" src="" alt="Patio de la Escuela Secundaria N°4" />
       </div>
       <div class="container hero-content">
-        <div class="hero-badge">
-          <img src="assets/img/logo.png" alt="Escudo de la Escuela Secundaria N°4" />
+        <div class="hero-text">
+          <span class="eyebrow" data-bind="hero.eyebrow"></span>
+          <h1 data-bind="hero.title"></h1>
+          <p data-bind="hero.subtitle"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-bind="hero.ctaPrimaryText" data-bind-attr="hero.ctaPrimaryLink:href" href="#inscripciones"></a>
+            <a class="btn btn-outline" data-bind="hero.ctaSecondaryText" data-bind-attr="hero.ctaSecondaryLink:href" href="#quienes-somos"></a>
+          </div>
         </div>
-        <span class="eyebrow" data-bind="hero.eyebrow"></span>
-        <h1 data-bind="hero.title"></h1>
-        <p data-bind="hero.subtitle"></p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" data-bind="hero.ctaPrimaryText" data-bind-attr="hero.ctaPrimaryLink:href" href="#inscripciones"></a>
-          <a class="btn btn-outline" data-bind="hero.ctaSecondaryText" data-bind-attr="hero.ctaSecondaryLink:href" href="#quienes-somos"></a>
-        </div>
+        <img class="hero-emblem" src="assets/img/logo-emblem.png" alt="Escudo de la Escuela Secundaria N°4" />
       </div>
       <a href="#quienes-somos" class="scroll-cue" aria-label="Bajar">
         <span>Descubrí más</span>

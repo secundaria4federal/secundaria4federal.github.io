@@ -152,13 +152,18 @@ section {
 
 .brand-text strong {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-weight: 600;
+  font-size: 1.32rem;
+  color: var(--navy-darker);
+  letter-spacing: 0.01em;
 }
 
 .brand-text span {
-  font-size: 0.72rem;
-  color: var(--ink-soft);
-  letter-spacing: 0.02em;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.86rem;
+  color: var(--gold);
+  letter-spacing: 0.01em;
 }
 
 .main-nav {
@@ -245,23 +250,22 @@ section {
 .hero-content {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   padding: 160px 0 96px;
-  max-width: 760px;
+  max-width: 1180px;
 }
 
-.hero-badge {
-  display: inline-flex;
-  background: var(--white);
-  border-radius: 20px;
-  padding: 12px;
-  margin-bottom: 26px;
-  box-shadow: var(--shadow-lg);
+.hero-text {
+  max-width: 640px;
 }
 
-.hero-badge img {
-  height: 76px;
-  width: 76px;
-  object-fit: contain;
+.hero-emblem {
+  width: min(300px, 30vw);
+  flex-shrink: 0;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
 }
 
 .hero .eyebrow {
@@ -955,6 +959,17 @@ section {
   .location-grid,
   .enrollment-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-emblem {
+    order: -1;
+    width: 140px;
   }
 
   .about-media {
