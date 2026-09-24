@@ -1,0 +1,603 @@
+{
+  "site": {
+    "name": "Escuela Secundaria N°4 \"Mariano Moreno\"",
+    "shortName": "Escuela N°4",
+    "location": "Colonia Federal, Federal, Entre Ríos",
+    "closingPhrase": "Somos parte de una historia que se sigue escribiendo cada día"
+  },
+  "nav": [
+    {
+      "label": "Inicio",
+      "href": "#inicio"
+    },
+    {
+      "label": "Quiénes somos",
+      "href": "#quienes-somos"
+    },
+    {
+      "label": "Oferta educativa",
+      "href": "#oferta-educativa"
+    },
+    {
+      "label": "Vida escolar",
+      "href": "#vida-escolar"
+    },
+    {
+      "label": "Inscripciones",
+      "href": "#inscripciones"
+    },
+    {
+      "label": "Galería",
+      "href": "#galeria"
+    },
+    {
+      "label": "Ubicación",
+      "href": "#ubicacion"
+    },
+    {
+      "label": "Contacto",
+      "href": "#contacto"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Escuela pública rural · Colonia Federal, Entre Ríos",
+    "title": "Escuela Secundaria N°4\n\"Mariano Moreno\"",
+    "subtitle": "Más de 25 años formando trayectorias en Colonia Federal, a diez kilómetros de la ciudad de Federal. Bachiller con orientación en Economía y Administración.",
+    "ctaPrimaryText": "Inscripciones Ciclo 2027",
+    "ctaPrimaryLink": "#inscripciones",
+    "ctaSecondaryText": "Conocé la escuela",
+    "ctaSecondaryLink": "#quienes-somos",
+    "image": "assets/img/gallery/portada.jpg",
+    "example": false
+  },
+  "about": {
+    "title": "Quiénes somos",
+    "example": false,
+    "paragraphs": [
+      "La Escuela Secundaria N°4 “Mariano Moreno” es una institución educativa rural ubicada en Colonia Federal, a aproximadamente diez kilómetros de la ciudad de Federal.",
+      "Contamos con más de veinticinco años de trayectoria, brindando una educación integral que fortalece el aprendizaje, la convivencia y el compromiso comunitario.",
+      "Buscamos acompañar a cada estudiante en su propio recorrido, en un espacio donde cada trayectoria cuenta y el futuro se construye en comunidad."
+    ]
+  },
+  "offer": {
+    "title": "Oferta educativa",
+    "example": false,
+    "orientation": "Bachiller con orientación en Economía y Administración",
+    "text": "Nuestra propuesta formativa se complementa con trayectos pedagógicos adaptados a los intereses de nuestros estudiantes, pensados para acompañar su paso por la escuela secundaria y su proyección hacia el futuro."
+  },
+  "workshops": {
+    "title": "Propuesta formativa",
+    "subtitle": "Talleres y espacios que complementan la formación de nuestros estudiantes.",
+    "example": false,
+    "items": [
+      {
+        "icon": "radio",
+        "title": "Taller de radio",
+        "text": "Un espacio de expresión y comunicación donde los estudiantes producen contenido propio."
+      },
+      {
+        "icon": "sprout",
+        "title": "Huerta orgánica",
+        "text": "Trabajo en la tierra y producción de alimentos de manera sustentable, a cielo abierto."
+      },
+      {
+        "icon": "utensils",
+        "title": "Producción de alimentos",
+        "text": "Producción y manipulación de alimentos como espacio de aprendizaje práctico."
+      },
+      {
+        "icon": "book-open",
+        "title": "Apoyo escolar",
+        "text": "Acompañamiento pedagógico para sostener las trayectorias educativas de los estudiantes."
+      }
+    ]
+  },
+  "schoolLife": {
+    "title": "Vida escolar",
+    "example": false,
+    "intro": "Abordamos temáticas sociales clave para el desarrollo adolescente y participamos activamente en torneos deportivos, viajes educativos y encuentros intercolegiales.",
+    "features": [
+      {
+        "icon": "clock",
+        "title": "Jornada extendida",
+        "text": "Actividades de nueve a diecisiete horas para garantizar el acompañamiento de los estudiantes."
+      },
+      {
+        "icon": "utensils-crossed",
+        "title": "Servicio de comedor",
+        "text": "Comedor escolar para acompañar la jornada extendida de nuestros alumnos."
+      },
+      {
+        "icon": "bus",
+        "title": "Transporte escolar",
+        "text": "Transporte escolar rural para garantizar la permanencia de los estudiantes."
+      }
+    ]
+  },
+  "institutionalProject": {
+    "title": "Proyecto institucional",
+    "example": true,
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    ]
+  },
+  "news": {
+    "title": "Novedades",
+    "example": true,
+    "items": [
+      {
+        "date": "Lorem ipsum",
+        "title": "Título de novedad de ejemplo",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+      },
+      {
+        "date": "Lorem ipsum",
+        "title": "Título de novedad de ejemplo",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+      },
+      {
+        "date": "Lorem ipsum",
+        "title": "Título de novedad de ejemplo",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+      }
+    ]
+  },
+  "enrollment": {
+    "title": "Inscripciones Ciclo Lectivo 2027",
+    "example": false,
+    "date": "2026-10-01",
+    "text": "Te invitamos a formar parte de la comunidad educativa de la Escuela N°4, un espacio donde cada trayectoria cuenta y el futuro se construye en comunidad.",
+    "ctaText": "Consultar por WhatsApp"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Momentos de la vida escolar en la Escuela N°4.",
+    "photos": [
+      {
+        "id": "foto-1",
+        "file": "assets/img/gallery/foto-1.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-1.jpg",
+        "width": 960,
+        "height": 1280,
+        "caption": ""
+      },
+      {
+        "id": "foto-2",
+        "file": "assets/img/gallery/foto-2.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-2.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-3",
+        "file": "assets/img/gallery/foto-3.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-3.jpg",
+        "width": 1280,
+        "height": 960,
+        "caption": ""
+      },
+      {
+        "id": "foto-4",
+        "file": "assets/img/gallery/foto-4.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-4.jpg",
+        "width": 720,
+        "height": 1280,
+        "caption": ""
+      },
+      {
+        "id": "foto-5",
+        "file": "assets/img/gallery/foto-5.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-5.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-6",
+        "file": "assets/img/gallery/foto-6.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-6.jpg",
+        "width": 1152,
+        "height": 864,
+        "caption": ""
+      },
+      {
+        "id": "foto-7",
+        "file": "assets/img/gallery/foto-7.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-7.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-8",
+        "file": "assets/img/gallery/foto-8.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-8.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-9",
+        "file": "assets/img/gallery/foto-9.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-9.jpg",
+        "width": 1280,
+        "height": 960,
+        "caption": ""
+      },
+      {
+        "id": "foto-10",
+        "file": "assets/img/gallery/foto-10.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-10.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-11",
+        "file": "assets/img/gallery/foto-11.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-11.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-12",
+        "file": "assets/img/gallery/foto-12.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-12.jpg",
+        "width": 1600,
+        "height": 2133,
+        "caption": ""
+      },
+      {
+        "id": "foto-13",
+        "file": "assets/img/gallery/foto-13.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-13.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-14",
+        "file": "assets/img/gallery/foto-14.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-14.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-15",
+        "file": "assets/img/gallery/foto-15.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-15.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-16",
+        "file": "assets/img/gallery/foto-16.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-16.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-17",
+        "file": "assets/img/gallery/foto-17.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-17.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-18",
+        "file": "assets/img/gallery/foto-18.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-18.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-19",
+        "file": "assets/img/gallery/foto-19.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-19.jpg",
+        "width": 1280,
+        "height": 720,
+        "caption": ""
+      },
+      {
+        "id": "foto-20",
+        "file": "assets/img/gallery/foto-20.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-20.jpg",
+        "width": 1280,
+        "height": 963,
+        "caption": ""
+      },
+      {
+        "id": "foto-21",
+        "file": "assets/img/gallery/foto-21.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-21.jpg",
+        "width": 960,
+        "height": 1280,
+        "caption": ""
+      },
+      {
+        "id": "foto-22",
+        "file": "assets/img/gallery/foto-22.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-22.jpg",
+        "width": 521,
+        "height": 1156,
+        "caption": ""
+      },
+      {
+        "id": "foto-23",
+        "file": "assets/img/gallery/foto-23.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-23.jpg",
+        "width": 960,
+        "height": 1280,
+        "caption": ""
+      },
+      {
+        "id": "foto-24",
+        "file": "assets/img/gallery/foto-24.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-24.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-25",
+        "file": "assets/img/gallery/foto-25.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-25.jpg",
+        "width": 963,
+        "height": 1280,
+        "caption": ""
+      },
+      {
+        "id": "foto-26",
+        "file": "assets/img/gallery/foto-26.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-26.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-27",
+        "file": "assets/img/gallery/foto-27.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-27.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-28",
+        "file": "assets/img/gallery/foto-28.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-28.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-29",
+        "file": "assets/img/gallery/foto-29.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-29.jpg",
+        "width": 1201,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-30",
+        "file": "assets/img/gallery/foto-30.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-30.jpg",
+        "width": 1519,
+        "height": 1190,
+        "caption": ""
+      },
+      {
+        "id": "foto-31",
+        "file": "assets/img/gallery/foto-31.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-31.jpg",
+        "width": 1204,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-32",
+        "file": "assets/img/gallery/foto-32.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-32.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-33",
+        "file": "assets/img/gallery/foto-33.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-33.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-34",
+        "file": "assets/img/gallery/foto-34.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-34.jpg",
+        "width": 1600,
+        "height": 900,
+        "caption": ""
+      },
+      {
+        "id": "foto-35",
+        "file": "assets/img/gallery/foto-35.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-35.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-36",
+        "file": "assets/img/gallery/foto-36.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-36.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-37",
+        "file": "assets/img/gallery/foto-37.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-37.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-38",
+        "file": "assets/img/gallery/foto-38.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-38.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-39",
+        "file": "assets/img/gallery/foto-39.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-39.jpg",
+        "width": 899,
+        "height": 1599,
+        "caption": ""
+      },
+      {
+        "id": "foto-40",
+        "file": "assets/img/gallery/foto-40.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-40.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-41",
+        "file": "assets/img/gallery/foto-41.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-41.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-42",
+        "file": "assets/img/gallery/foto-42.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-42.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-43",
+        "file": "assets/img/gallery/foto-43.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-43.jpg",
+        "width": 899,
+        "height": 1599,
+        "caption": ""
+      },
+      {
+        "id": "foto-44",
+        "file": "assets/img/gallery/foto-44.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-44.jpg",
+        "width": 899,
+        "height": 1599,
+        "caption": ""
+      },
+      {
+        "id": "foto-45",
+        "file": "assets/img/gallery/foto-45.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-45.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-46",
+        "file": "assets/img/gallery/foto-46.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-46.jpg",
+        "width": 1599,
+        "height": 899,
+        "caption": ""
+      },
+      {
+        "id": "foto-47",
+        "file": "assets/img/gallery/foto-47.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-47.jpg",
+        "width": 1599,
+        "height": 899,
+        "caption": ""
+      },
+      {
+        "id": "foto-48",
+        "file": "assets/img/gallery/foto-48.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-48.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": ""
+      },
+      {
+        "id": "foto-49",
+        "file": "assets/img/gallery/foto-49.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-49.jpg",
+        "width": 905,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-50",
+        "file": "assets/img/gallery/foto-50.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-50.jpg",
+        "width": 1600,
+        "height": 1204,
+        "caption": ""
+      },
+      {
+        "id": "foto-51",
+        "file": "assets/img/gallery/foto-51.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-51.jpg",
+        "width": 1600,
+        "height": 900,
+        "caption": ""
+      },
+      {
+        "id": "foto-52",
+        "file": "assets/img/gallery/foto-52.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-52.jpg",
+        "width": 1200,
+        "height": 1600,
+        "caption": ""
+      },
+      {
+        "id": "foto-53",
+        "file": "assets/img/gallery/foto-53.jpg",
+        "thumb": "assets/img/gallery/thumbs/foto-53.jpg",
+        "width": 1600,
+        "height": 900,
+        "caption": ""
+      }
+    ]
+  },
+  "location": {
+    "title": "Cómo llegar",
+    "example": false,
+    "address": "RP5, Colonia Federal, Entre Ríos",
+    "lat": -30.919504,
+    "lng": -58.835424,
+    "mapsLink": "https://maps.app.goo.gl/3ZQXvw7TjB7jXYT3A"
+  },
+  "contact": {
+    "title": "Contacto",
+    "example": false,
+    "phone": "+54 3454 40-8277",
+    "phoneLink": "5493454408277",
+    "email": "secundaria4.fl@entrerios.edu.ar",
+    "instagram": "https://www.instagram.com/esc.sec.marianomoreno",
+    "hours": "Lunes a viernes de 9 a 17 hs"
+  },
+  "footer": {
+    "text": "Escuela Secundaria N°4 \"Mariano Moreno\" — Colonia Federal, Entre Ríos"
+  }
+}

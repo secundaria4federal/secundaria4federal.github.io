@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escuela Secundaria N°4 "Mariano Moreno" — Colonia Federal, Entre Ríos</title>
+  <meta name="description" content="Escuela Secundaria N°4 'Mariano Moreno', Colonia Federal, Entre Ríos. Bachiller con orientación en Economía y Administración. Inscripciones Ciclo 2027." />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="#inicio" class="brand">
+        <img src="assets/img/logo.png" alt="Escudo de la Escuela Secundaria N°4" />
+        <span class="brand-text">
+          <strong>Escuela N°4</strong>
+          <span>"Mariano Moreno"</span>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" data-bind-nav></nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="hero-media">
+        <img data-bind-attr="hero.image:src" src="" alt="Patio de la Escuela Secundaria N°4" />
+      </div>
+      <div class="container hero-content">
+        <span class="eyebrow" data-bind="hero.eyebrow"></span>
+        <h1 data-bind="hero.title"></h1>
+        <p data-bind="hero.subtitle"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-bind="hero.ctaPrimaryText" data-bind-attr="hero.ctaPrimaryLink:href" href="#inscripciones"></a>
+          <a class="btn btn-outline" data-bind="hero.ctaSecondaryText" data-bind-attr="hero.ctaSecondaryLink:href" href="#quienes-somos"></a>
+        </div>
+      </div>
+      <a href="#quienes-somos" class="scroll-cue" aria-label="Bajar">
+        <span>Descubrí más</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ===================== QUIÉNES SOMOS ===================== -->
+    <section class="about-section" id="quienes-somos">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="section-heading">
+              <span class="eyebrow">Nuestra institución</span>
+              <h2 data-bind="about.title"></h2>
+            </div>
+            <div data-bind-html="about.paragraphs"></div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <strong>+25</strong>
+                <span>años de trayectoria educativa</span>
+              </div>
+              <div class="stat-card">
+                <strong>Rural</strong>
+                <span>a 10 km de la ciudad de Federal</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-media reveal">
+            <img src="assets/img/gallery/foto-2.jpg" alt="Estudiantes de la Escuela N°4 en actividades escolares" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OFERTA EDUCATIVA ===================== -->
+    <section class="offer-section" id="oferta-educativa">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Oferta educativa</span>
+          <h2 data-bind="offer.title"></h2>
+        </div>
+        <div class="offer-card reveal">
+          <div class="offer-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10L12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <div>
+            <h3 data-bind="offer.orientation"></h3>
+            <p data-bind="offer.text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROPUESTA FORMATIVA / TALLERES ===================== -->
+    <section class="workshops-section" id="propuesta-formativa">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Propuesta formativa</span>
+          <h2 data-bind="workshops.title"></h2>
+          <p data-bind="workshops.subtitle"></p>
+        </div>
+        <div class="card-grid reveal" id="workshopsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== VIDA ESCOLAR ===================== -->
+    <section class="schoollife-section" id="vida-escolar">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Vida escolar</span>
+          <h2 data-bind="schoolLife.title"></h2>
+        </div>
+        <p class="schoollife-intro reveal" data-bind="schoolLife.intro"></p>
+        <div class="feature-row reveal" id="featuresGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTO INSTITUCIONAL (placeholder) ===================== -->
+    <section class="project-section" id="proyecto-institucional">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="section-heading">
+              <span class="example-badge" id="projectBadge" hidden>Contenido de ejemplo — completar</span>
+              <span class="eyebrow">Misión y visión</span>
+              <h2 data-bind="institutionalProject.title"></h2>
+            </div>
+            <div data-bind-html="institutionalProject.paragraphs"></div>
+          </div>
+          <div class="about-media reveal">
+            <img src="assets/img/gallery/foto-10.jpg" alt="Actividades en la huerta de la Escuela N°4" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOVEDADES (placeholder) ===================== -->
+    <section class="news-section" id="novedades">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="example-badge" id="newsBadge" hidden>Contenido de ejemplo — completar</span>
+          <span class="eyebrow">Novedades</span>
+          <h2 data-bind="news.title"></h2>
+        </div>
+        <div class="card-grid reveal" id="newsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== INSCRIPCIONES ===================== -->
+    <section class="enrollment-section" id="inscripciones">
+      <div class="container">
+        <div class="enrollment-grid reveal">
+          <div class="enrollment-date" id="enrollmentDate">
+            <span class="day">01</span>
+            <span class="month-year">Octubre 2026</span>
+          </div>
+          <div class="enrollment-text">
+            <h2 data-bind="enrollment.title"></h2>
+            <p data-bind="enrollment.text"></p>
+            <a class="btn btn-primary" data-bind="enrollment.ctaText" href="#contacto"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Momentos de la escuela</span>
+          <h2 data-bind="gallery.title"></h2>
+          <p data-bind="gallery.subtitle"></p>
+        </div>
+        <div class="gallery-grid reveal" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== UBICACIÓN ===================== -->
+    <section class="location-section" id="ubicacion">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Encontranos</span>
+          <h2 data-bind="location.title"></h2>
+        </div>
+        <div class="location-grid reveal">
+          <div class="location-card">
+            <h3>Escuela Secundaria N°4 "Mariano Moreno"</h3>
+            <div class="location-detail">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              </div>
+              <div>
+                <strong>Dirección</strong>
+                <span data-bind="location.address"></span>
+              </div>
+            </div>
+            <div class="location-detail">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </div>
+              <div>
+                <strong>Horario de atención</strong>
+                <span data-bind="contact.hours"></span>
+              </div>
+            </div>
+            <a class="btn btn-outline" id="mapsLink" style="color:#0b3d78;border-color:#0b3d78;" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
+          <div class="map-frame">
+            <iframe id="mapEmbed" src="" title="Ubicación de la Escuela Secundaria N°4" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Estamos para ayudarte</span>
+          <h2 data-bind="contact.title"></h2>
+          <p>Escribinos por el medio que te resulte más cómodo.</p>
+        </div>
+        <div class="contact-grid reveal" id="contactGrid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span data-bind="footer.text"></span>
+      <a href="admin.html">Panel institucional</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

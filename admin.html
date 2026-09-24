@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Panel institucional — Escuela N°4</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="admin-body">
+
+  <header class="admin-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.png" alt="Escudo de la Escuela Secundaria N°4" />
+        <span class="brand-text">
+          <strong>Panel institucional</strong>
+          <span>Escuela N°4 "Mariano Moreno"</span>
+        </span>
+      </a>
+      <div id="headerStatus" class="status-pill"><span class="dot"></span> Sin conectar</div>
+    </div>
+  </header>
+
+  <div class="admin-shell">
+
+    <!-- ===================== CONEXIÓN ===================== -->
+    <div class="admin-card">
+      <h2>Conexión con GitHub</h2>
+      <p class="hint">
+        Para guardar cambios reales en la página, este panel necesita un <strong>token de acceso personal de GitHub</strong>
+        con permiso de escritura sobre este repositorio. El token queda guardado solo en este navegador — nunca se sube al sitio.
+        Sin un token válido podés ver el panel, pero no vas a poder guardar nada.
+      </p>
+
+      <div class="token-row">
+        <input type="password" id="tokenInput" placeholder="Pegá acá tu token de GitHub (ghp_... o github_pat_...)" autocomplete="off" />
+        <button class="btn-admin" id="connectBtn">Conectar</button>
+        <button class="btn-admin secondary" id="disconnectBtn" hidden>Cerrar sesión</button>
+      </div>
+      <div id="connectMessage" class="save-message"></div>
+
+      <details class="instructions">
+        <summary>¿Cómo genero mi token de GitHub? (una sola vez)</summary>
+        <ol>
+          <li>Entrá a GitHub con tu cuenta y andá a <code>Settings → Developer settings → Personal access tokens → Fine-grained tokens</code>.</li>
+          <li>Hacé clic en <strong>Generate new token</strong>. Ponele un nombre, por ejemplo "Panel Escuela N°4".</li>
+          <li>En <strong>Resource owner</strong> elegí la organización/cuenta dueña del repositorio (<code>secundaria4federal</code>).</li>
+          <li>En <strong>Repository access</strong> elegí <strong>Only select repositories</strong> y seleccioná únicamente <code>secundaria4federal.github.io</code>.</li>
+          <li>En <strong>Permissions → Repository permissions</strong>, buscá <strong>Contents</strong> y elegí <strong>Read and write</strong>.</li>
+          <li>Generá el token y copialo (empieza con <code>github_pat_</code>). Pegalo acá arriba — no vas a poder verlo de nuevo en GitHub, así que guardalo en un lugar seguro (ej. un gestor de contraseñas).</li>
+        </ol>
+      </details>
+    </div>
+
+    <div id="adminGate" class="admin-card gate-overlay">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      <p>Conectá tu token de GitHub para empezar a editar los contenidos y la galería.</p>
+    </div>
+
+    <div id="adminContent" hidden>
+      <div class="tabs">
+        <button class="tab-btn is-active" data-tab="textos">Textos del sitio</button>
+        <button class="tab-btn" data-tab="galeria">Galería de fotos</button>
+      </div>
+
+      <!-- ===================== TAB: TEXTOS ===================== -->
+      <div class="tab-panel is-active" id="tab-textos">
+        <form id="contentForm">
+
+          <div class="admin-card">
+            <h2>Inicio</h2>
+            <div class="field">
+              <label>Bajada del inicio (subtítulo del hero)</label>
+              <textarea data-path="hero.subtitle"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h2>Quiénes somos</h2>
+            <div class="field">
+              <label>Párrafos <span class="field-hint">Un párrafo por línea.</span></label>
+              <textarea data-path="about.paragraphs" data-type="lines" rows="6"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h2>Oferta educativa</h2>
+            <div class="field">
+              <label>Orientación</label>
+              <input type="text" data-path="offer.orientation" />
+            </div>
+            <div class="field">
+              <label>Texto</label>
+              <textarea data-path="offer.text"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h2>Vida escolar</h2>
+            <div class="field">
+              <label>Introducción</label>
+              <textarea data-path="schoolLife.intro"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h2>Proyecto institucional</h2>
+            <div class="field checkbox-field">
+              <input type="checkbox" id="projectExample" data-path="institutionalProject.example" data-type="bool" />
+              <label for="projectExample" style="margin:0;">Marcar como "contenido de ejemplo" en el sitio</label>
+            </div>
+            <div class="field">
+              <label>Párrafos <span class="field-hint">Un párrafo por línea.</span></label>
+              <textarea data-path="institutionalProject.paragraphs" data-type="lines" rows="6"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h2>Inscripciones</h2>
+            <div class="field-grid">
+              <div class="field">
+                <label>Título</label>
+                <input type="text" data-path="enrollment.title" />
+              </div>
+              <div class="field">
+                <label>Fecha de inicio de inscripciones</label>
+                <input type="date" data-path="enrollment.date" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Texto de invitación</label>
+              <textarea data-path="enrollment.text"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <h2>Ubicación</h2>
+            <div class="field">
+              <label>Dirección mostrada</label>
+              <input type="text" data-path="location.address" />
+            </div>
+            <p class="hint">Para cambiar el punto exacto del mapa, pedile a quien administra el repositorio que actualice las coordenadas (lat/lng) en <code>data/content.json</code>.</p>
+          </div>
+
+          <div class="admin-card">
+            <h2>Contacto</h2>
+            <div class="field-grid">
+              <div class="field">
+                <label>Teléfono (texto visible)</label>
+                <input type="text" data-path="contact.phone" />
+              </div>
+              <div class="field">
+                <label>Teléfono para WhatsApp <span class="field-hint">Solo números, con código de país. Ej: 5493454408277</span></label>
+                <input type="text" data-path="contact.phoneLink" />
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input type="email" data-path="contact.email" />
+              </div>
+              <div class="field">
+                <label>Instagram (link completo)</label>
+                <input type="url" data-path="contact.instagram" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Horario de atención</label>
+              <input type="text" data-path="contact.hours" />
+            </div>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit" class="btn-admin" id="saveContentBtn">Guardar cambios de texto</button>
+            <span class="save-message" id="contentSaveMessage"></span>
+          </div>
+        </form>
+      </div>
+
+      <!-- ===================== TAB: GALERÍA ===================== -->
+      <div class="tab-panel" id="tab-galeria">
+
+        <div class="admin-card">
+          <h2>Subir fotos nuevas</h2>
+          <p class="hint">Las imágenes se optimizan automáticamente en tu navegador antes de subirse (no hace falta reducirlas vos).</p>
+          <label class="upload-drop" id="uploadDrop" for="fileInput">
+            Hacé clic acá (o arrastrá fotos) para elegir imágenes desde tu equipo
+          </label>
+          <input type="file" id="fileInput" accept="image/*" multiple hidden />
+          <div class="pending-grid" id="pendingGrid"></div>
+          <div class="admin-actions" id="pendingActions" hidden>
+            <button class="btn-admin" id="uploadBtn">Subir y guardar</button>
+            <button class="btn-admin secondary" id="clearPendingBtn">Cancelar selección</button>
+            <span class="save-message" id="uploadMessage"></span>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Fotos actuales</h2>
+          <p class="hint">Reordená con las flechas, editá el epígrafe o eliminá fotos. Los cambios se guardan al hacer clic en "Guardar cambios en galería".</p>
+          <div class="photo-grid" id="photoGrid"></div>
+          <div class="admin-actions">
+            <button class="btn-admin" id="saveGalleryBtn">Guardar cambios en galería</button>
+            <span class="save-message" id="gallerySaveMessage"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

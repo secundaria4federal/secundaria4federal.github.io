@@ -1,0 +1,28 @@
+{
+  "name": "secundaria4federal.github.io",
+  "version": "1.0.0",
+  "description": "Página web institucional de la Escuela Secundaria N°4 \"Mariano Moreno\" de Federal, Entre Ríos",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.js",
+    "build-content": "node scripts/build-content.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/secundaria4federal/secundaria4federal.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/secundaria4federal/secundaria4federal.github.io/issues"
+  },
+  "homepage": "https://github.com/secundaria4federal/secundaria4federal.github.io#readme"
+}
